@@ -1,0 +1,333 @@
+/* ---------- Main Styles ---------- */
+
+a:link,
+a:visited {
+    color: #546A7B;
+}
+
+a:hover,
+a:active {
+    color: #E39695;
+}
+
+footer,
+.portfolio {
+    background: rgba(158, 163, 176, 0.295);
+}
+
+.projects,
+.contact-form,
+.contact,
+.btn-primary {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    padding: 0.5rem;
+    color: #E39695;
+    border-bottom: 2px solid #546A7B;
+}
+
+
+/* ---------- Navigation ---------- */
+
+/* ---------- Header ---------- */
+
+header {
+    height: 200px;
+    background: linear-gradient(rgba(158, 163, 176, 0.4), rgba(0, 0, 0, 0.4)), url('images/undraw_dev_focus_b9xo\ \(1\).svg'), no-repeat top center;
+    background-size: contain;                      
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-img {
+    display: none;
+}
+
+.header-text {
+    /*position: relative;
+    top: 50%;*/
+    transform: translateY(50%);
+    text-align: center;
+    color: white;
+}
+
+/* ---------- Skills Section ---------- */
+
+.skills-icons {
+    padding: 0.5rem;
+}
+
+/* ---------- Portfolio ---------- */
+
+.card-text {
+    text-align: center;
+}
+
+.card p {
+    color: #546A7B;
+    display: inline-block;
+}
+
+.card-photo {
+    background-color: #E39695;
+}
+
+.card-photo:hover img {
+    opacity: 0.2;
+}
+
+.card-btn {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%);
+    background-color: #546A7B;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-btn:focus {
+    outline: none;
+    border: 2px solid #E9FAE3;
+}
+  
+img:hover + .card-btn, 
+.card-btn:hover {
+    display: inline-block;
+}
+
+/* ----- Modals ----- */
+
+.modal-hover {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%
+}
+
+.myBtn {
+    background-color: #546A7B;
+    color: white;
+}
+
+.modal-footer img {
+    height: 1.5rem;
+    padding-right: 0.2rem;
+}
+
+img:hover + .modal-hover,
+.modal-hover:hover {
+    display: inline-block;
+}
+
+.modal-header, h4, .close {
+    background-color: #E39695;
+    color:white !important;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.modal-footer {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.modal-header .close {
+    margin: -1rem;
+}
+
+.modal-footer,
+.modal-header {
+    display: inline-block;
+}
+
+/* ---------- Contact Form ---------- */
+
+.form-row {
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.form-control:focus {
+    border: #E9FAE3;
+    box-shadow:  0 0 0 0.2rem rgba(84, 106, 123, 0.25);
+}
+
+.btn-primary {
+    background-color: #E39695;;
+    color: white;
+    border: none;
+    margin-top: 0.25rem;
+}
+
+/* ---------- Footer ---------- */
+
+.footer-text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+}
+
+.social-icons img {
+    height: 1.5rem;
+}
+
+footer {
+    padding: 0;
+}
+
+.navbar.bottom {
+    justify-content: center;
+}
+
+.social-icons {
+    padding: 0.25rem;
+}
+
+/* ---------- Media Queries ---------- */
+
+@media screen and (min-width: 480px) {
+    .card-btn {
+        top: 35%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .skills,
+    .portfolio,
+    .contact {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .skills img {
+        height: 5rem;
+    }
+
+    .skills-icons {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .col-md-6 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card-btn {
+        top: 25%;
+        padding: 1rem;
+    }
+
+    .card-body {
+        padding: 0.80rem;
+    }
+
+    .contact {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .header {
+        background: none;
+        background: rgba(158, 163, 176, 0.295);
+        height: 20vh;
+    }
+
+    .header-img {
+        display: inline;
+        padding: 2rem 0 2rem 5rem;
+        text-align: right;
+    }
+
+    .header-img img {
+        max-width: -webkit-fill-available;
+        max-height: -webkit-fill-available;
+        float: left;
+    }
+
+    .header-text {
+        color: #546A7B;
+        height: fit-content;
+        text-align: left;
+        padding-top: 2rem;
+    }
+
+    .skills-icons {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    .card-body {
+        display: none;
+    }
+
+    .card-photo,
+    .card-img-top {
+        height: 100%;
+    }
+
+    .contact {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .form-row {
+        margin: 1rem;
+    }
+
+    .btn-primary {
+        margin-left: 1.2rem;
+        width: 10rem;
+    }
+
+    .social-icons img {
+        height: 2.2rem;
+        margin: 0.5rem;
+    }
+
+    .footer-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1.5rem;
+    }
+}
